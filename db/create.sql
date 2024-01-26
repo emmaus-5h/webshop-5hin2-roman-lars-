@@ -9,14 +9,6 @@ CREATE TABLE products (
   description TEXT,
   price NUMERIC(10, 2)
 );
-
-CREATE TABLE  prijzen(
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  code VARCHAR(15),
-  name VARCHAR(255),
-  description TEXT,
-  price NUMERIC(10, 2)
-);
 --
 -- populate with data
 --
@@ -38,5 +30,5 @@ insert into products (name, description, code, price) values ('liverpool', 'Nam 
 
 
 
-
+--n:m kleur shirtjes
 
