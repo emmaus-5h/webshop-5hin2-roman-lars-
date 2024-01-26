@@ -7,7 +7,15 @@ CREATE TABLE products (
   code VARCHAR(15),
   name VARCHAR(255),
   description TEXT,
-  price NUMERIC(10, 2)
+  price NUMERIC(10, 2),
+  kwaliteit VARCHAR(20)
+);
+
+CREATE TABLE kleur (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  code VARCHAR(15),
+  kleurNAAM VARCHAR(255),
+  description TEXT
 );
 --
 -- populate with data
