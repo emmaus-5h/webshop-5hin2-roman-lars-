@@ -27,6 +27,13 @@ CREATE TABLE soorteerOPkleur (
   kleur_id INTEGER,
   products_id INTEGER
 );
+
+CREATE TABLE kwaliteit (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  cijfer VARCHAR(20),
+  reden_cijfer VARCHAR (30)
+);
+
 --
 -- populate with data
 --
@@ -38,8 +45,8 @@ CREATE TABLE soorteerOPkleur (
 
 insert into products (name, description, code, price, kwaliteit) values ('liverpool', 'liverpool thuis shirt 23/24.', '816905633-0', 100, 8/10);
 insert into products (name, description, code, price, kwaliteit) values ('liverpool uit shirt', 'liverpool uit shirt 23/24.', '816905633-1', 100, 8/10);
-insert into products (name, description, code, price, kwaliteit) values ('barcalona', 'barcalona thuis shirt 23/24.', '077030122-3', 100, 8/10);
-insert into products (name, description, code, price, kwaliteit) values ('barcalona uit shirt', 'barcalona uit shirt 23/24.', '077030122-4', 100, 8/10);
+insert into products (name, description, code, price, kwaliteit) values ('barcelona', 'barcalona thuis shirt 23/24.', '077030122-3', 100, 8/10);
+insert into products (name, description, code, price, kwaliteit) values ('barcelona uit shirt', 'barcalona uit shirt 23/24.', '077030122-4', 100, 8/10);
 insert into products (name, description, code, price, kwaliteit) values ('man united', 'manchester united thuis shirt 23/24.' ,'445924201-X', 100, 8/10);
 insert into products (name, description, code, price, kwaliteit) values ('man united uit shirt', 'manchester united uit shirt 23/24.' ,'445924201-Y', 100, 8/10);
 insert into products (name, description, code, price, kwaliteit) values ('psg', 'psg thuis shirt 23/24.', '693155505-7', 100, 8/10);
@@ -62,7 +69,18 @@ insert into  kleur (kleurNAAM) values ('donker groen');
 
 
 
-
+insert into  soorteerOPkleur (products_id, kleur_id) values ('1, 2');
+insert into  soorteerOPkleur (products_id, kleur_id) values ('1, 3');
+insert into  soorteerOPkleur (products_id, kleur_id) values ('2, 1');
+insert into  soorteerOPkleur (products_id, kleur_id) values ('2, 2');
+insert into  soorteerOPkleur (products_id, kleur_id) values ('2, 7');
+insert into  soorteerOPkleur (products_id, kleur_id) values ('2, 8');
+insert into  soorteerOPkleur (products_id, kleur_id) values ('3, 3');
+insert into  soorteerOPkleur (products_id, kleur_id) values ('3, 4');
+insert into  soorteerOPkleur (products_id, kleur_id) values ('3, 5');
+insert into  soorteerOPkleur (products_id, kleur_id) values ('3, 6');
+insert into  soorteerOPkleur (products_id, kleur_id) values ('4, ');
+insert into  soorteerOPkleur (products_id, kleur_id) values ('');
 
 
 --n:m kleur shirtjes
