@@ -2,6 +2,12 @@
 -- create tables
 --
 
+-- feedback GEE 30 jan 2024
+-- de n:m met kleuren klopt (de tabellen, de insert moet je nog toevoegen)
+-- er moet 1:n, maar dat is eenvoudiger.
+-- kwaliteit apart in een tabel voegt een 1:n toe. Dan moet je er wel bijvoorbeeld een beschrijving van kwaliteit bij voegen
+-- daarna moet er nog 1 tabel bij
+
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   code VARCHAR(15),
@@ -18,8 +24,8 @@ CREATE TABLE kleur (
 
 CREATE TABLE soorteerOPkleur (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  kleur_id VARCHAR (20)
-  products_id VARCHAR(20)
+  kleur_id INTEGER,
+  products_id INTEGER
 );
 --
 -- populate with data
