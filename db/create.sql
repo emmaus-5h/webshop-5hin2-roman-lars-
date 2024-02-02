@@ -24,8 +24,8 @@ CREATE TABLE kleur (
 
 CREATE TABLE soorteerOPkleur (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  kleur_id INTEGER,
-  products_id INTEGER
+  products_id INTEGER,
+  kleur_id INTEGER
 );
 
 CREATE TABLE kwaliteit (
@@ -51,8 +51,6 @@ insert into products (name, description, code, price, kwaliteit) values ('man un
 insert into products (name, description, code, price, kwaliteit) values ('man united uit shirt', 'manchester united uit shirt 23/24.' ,'445924201-Y', 100, 8/10);
 insert into products (name, description, code, price, kwaliteit) values ('psg', 'psg thuis shirt 23/24.', '693155505-7', 100, 8/10);
 insert into products (name, description, code, price, kwaliteit) values ('psg uit shirt', 'psg uit shirt 23/24.', '693155505-8', 100, 8/10);
-insert into products (name, description, code, price, kwaliteit) values ('real madrid', 'real madrid thuis shirt 23/24.', '686928463-6', 100, 9/10);
-insert into products (name, description, code, price, kwaliteit) values ('real madrid uit shirt', 'real madrid uit shirt 23/24.', '686928463-7', 100, 9/10);
 insert into products (name, description, code, price, kwaliteit) values ('bayern munchen', 'bayern munchen thuis shirt 23/24.', '492662523-7', 100, 8.5/10);
 insert into products (name, description, code, price, kwaliteit) values ('bayern munchen uit shirt', 'bayern munchen uit shirt 23/24.', '492662523-8', 100, 8.5/10);
 
@@ -69,18 +67,31 @@ insert into  kleur (kleurNAAM) values ('donker groen');
 
 
 
-insert into  soorteerOPkleur (products_id, kleur_id) values ('1, 2');
-insert into  soorteerOPkleur (products_id, kleur_id) values ('1, 3');
-insert into  soorteerOPkleur (products_id, kleur_id) values ('2, 1');
-insert into  soorteerOPkleur (products_id, kleur_id) values ('2, 2');
-insert into  soorteerOPkleur (products_id, kleur_id) values ('2, 7');
-insert into  soorteerOPkleur (products_id, kleur_id) values ('2, 8');
-insert into  soorteerOPkleur (products_id, kleur_id) values ('3, 3');
-insert into  soorteerOPkleur (products_id, kleur_id) values ('3, 4');
-insert into  soorteerOPkleur (products_id, kleur_id) values ('3, 5');
-insert into  soorteerOPkleur (products_id, kleur_id) values ('3, 6');
-insert into  soorteerOPkleur (products_id, kleur_id) values ('4, ');
-insert into  soorteerOPkleur (products_id, kleur_id) values ('');
-
+insert into  soorteerOPkleur (products_id, kleur_id) values (1, 2);
+insert into  soorteerOPkleur (products_id, kleur_id) values (1, 3);
+insert into  soorteerOPkleur (products_id, kleur_id) values (2, 1);
+insert into  soorteerOPkleur (products_id, kleur_id) values (2, 2);
+insert into  soorteerOPkleur (products_id, kleur_id) values (2, 7);
+insert into  soorteerOPkleur (products_id, kleur_id) values (2, 8);
+insert into  soorteerOPkleur (products_id, kleur_id) values (3, 3);
+insert into  soorteerOPkleur (products_id, kleur_id) values (3, 4);
+insert into  soorteerOPkleur (products_id, kleur_id) values (3, 5);
+insert into  soorteerOPkleur (products_id, kleur_id) values (3, 6);
+insert into  soorteerOPkleur (products_id, kleur_id) values (4, 2);
+insert into  soorteerOPkleur (products_id, kleur_id) values (4, 3);
+insert into  soorteerOPkleur (products_id, kleur_id) values (4, 4);
 
 --n:m kleur shirtjes
+
+
+
+insert into  kwaliteit (cijfer, reden_cijfer) values ('1/10','voelt niet goed aan en is slechte kwaliteit');
+insert into  kwaliteit (cijfer, reden_cijfer) values ('2/10','slechte kwaliteit en zit niet lekker');
+insert into  kwaliteit (cijfer, reden_cijfer) values ('3/10','');
+insert into  kwaliteit (cijfer, reden_cijfer) values ('4/10','');
+insert into  kwaliteit (cijfer, reden_cijfer) values ('5/10','');
+insert into  kwaliteit (cijfer, reden_cijfer) values ('6/10','');
+insert into  kwaliteit (cijfer, reden_cijfer) values ('7/10','');
+insert into  kwaliteit (cijfer, reden_cijfer) values ('8/10','');
+insert into  kwaliteit (cijfer, reden_cijfer) values ('9/10','');
+insert into  kwaliteit (cijfer, reden_cijfer) values ('10/10','');
